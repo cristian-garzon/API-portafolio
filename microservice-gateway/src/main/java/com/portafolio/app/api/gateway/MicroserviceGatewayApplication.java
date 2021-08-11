@@ -1,17 +1,15 @@
-package com.portafolio.app.api.project;
+package com.portafolio.app.api.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-
 @SpringBootApplication
 @EnableEurekaClient
-public class MicroserviceProjectApplication {
-
+public class MicroserviceGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroserviceProjectApplication.class, args);
+        SpringApplication.run(MicroserviceGatewayApplication.class, args);
     }
 
 }
