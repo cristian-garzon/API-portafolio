@@ -35,4 +35,10 @@ public class ProjectServiceImpl implements ProjectService{
     public Optional<Project> find(Long id) {
         return repo.findById(id);
     }
+
+    @Override
+    public Optional<Images> findImgByIdProject(Long id, Long id_img) {
+        return imagesRepo.findImgByIdProject(id, id_img);
+    }
+
 }
