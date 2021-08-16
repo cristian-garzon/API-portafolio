@@ -7,6 +7,9 @@ import com.portafolio.app.api.project.repository.ProjectRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,4 +44,15 @@ public class ProjectServiceImpl implements ProjectService{
         return imagesRepo.findImgByIdProject(id, id_img);
     }
 
+    @Override
+    public Date parseDate(String date) {
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        Date dateFormat = null;
+        try {
+            dateFormat = format.parse(date);
+        } catch (ParseException e){
+            System.out.println(e.getMessage());
+        }
+        return dateFormat;
+    }
 }

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -14,6 +15,12 @@ public class Project {
     private Long id;
 
     private String urlRepo;
+
+    private Date start;
+
+    private Date end;
+
+    private String workStation;
 
     private String description;
 
@@ -27,6 +34,30 @@ public class Project {
 
     public void setImages(List<Images> images) {
         this.images = images;
+    }
+
+    public void setStart(Date start) {
+        this.start = start;
+    }
+
+    public void setEnd(Date end) {
+        this.end = end;
+    }
+
+    public void setWorkStation(String workStation) {
+        this.workStation = workStation;
+    }
+
+    public Date getStart() {
+        return start;
+    }
+
+    public Date getEnd() {
+        return end;
+    }
+
+    public String getWorkStation() {
+        return workStation;
     }
 
     public void addImages(Images images){

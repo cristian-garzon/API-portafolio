@@ -25,11 +25,15 @@ public class ProjectController {
         return ResponseEntity.ok(service.list());
     }
     @PostMapping("/save")
-    public ResponseEntity<?> save(Project project, @RequestParam MultipartFile file) throws IOException{
-        Images images = new Images();
-        images.setImage(file.getBytes());
-        images.setProject(project);
-        if(!file.isEmpty()) project.addImages(images);
+    public ResponseEntity<?> save(Project project, @RequestParam MultipartFile file, @RequestParam String start, @RequestParam String end) throws IOException{
+        if(!file.isEmpty()){
+            Images images = new Images();
+            images.setImage(file.getBytes());
+            images.setProject(project);
+            project.addImages(images);
+        }
+        project.setStart(service.parseDate(start));
+        project.setEnd(service.parseDate(end));
         return ResponseEntity.status(HttpStatus.CREATED).body(service.save(project));
     }
     @PutMapping("/add_image/{id}")
