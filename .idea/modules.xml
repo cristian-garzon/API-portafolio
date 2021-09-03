@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/api-portafolio.iml" filepath="$PROJECT_DIR$/.idea/api-portafolio.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-eureka/microservice-eureka.iml" filepath="$PROJECT_DIR$/microservice-eureka/microservice-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-gateway/microservice-gateway.iml" filepath="$PROJECT_DIR$/microservice-gateway/microservice-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-mail/microservice-mail.iml" filepath="$PROJECT_DIR$/microservice-mail/microservice-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-project/microservice-project.iml" filepath="$PROJECT_DIR$/microservice-project/microservice-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-skill/microservice-skill.iml" filepath="$PROJECT_DIR$/microservice-skill/microservice-skill.iml" />
     </modules>

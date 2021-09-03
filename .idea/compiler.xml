@@ -9,12 +9,14 @@
         <module name="microservice-gateway" />
         <module name="microservice-project" />
         <module name="microservice-skill" />
+        <module name="microservice-mail" />
         <module name="microservice-eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="microservice-eureka" target="11" />
       <module name="microservice-gateway" target="11" />
+      <module name="microservice-mail" target="11" />
       <module name="microservice-project" target="11" />
       <module name="microservice-skill" target="11" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="microservice-eureka" options="-parameters" />
       <module name="microservice-gateway" options="-parameters" />
+      <module name="microservice-mail" options="-parameters" />
       <module name="microservice-project" options="-parameters" />
       <module name="microservice-skill" options="-parameters" />
     </option>

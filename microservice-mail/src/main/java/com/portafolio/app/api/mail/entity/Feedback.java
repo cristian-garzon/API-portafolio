@@ -1,10 +1,10 @@
-package com.portafolio.app.api.mail;
+package com.portafolio.app.api.mail.entity;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-public class feedback {
+public class Feedback {
     @NotNull
     private String name;
 
