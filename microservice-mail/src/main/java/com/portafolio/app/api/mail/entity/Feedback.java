@@ -15,7 +15,7 @@ public class Feedback {
     private String email;
 
     @NotNull
-    @Min(10)
+    @NotEmpty
     private String feedback;
 
     public String getName() {
