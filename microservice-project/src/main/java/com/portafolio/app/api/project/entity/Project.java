@@ -24,6 +24,8 @@ public class Project {
 
     private String description;
 
+    private String webSite;
+
     @JsonIgnoreProperties(value = {"project"}, allowSetters = true)
     @OneToMany(mappedBy = "project", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Images> images;
@@ -42,6 +44,14 @@ public class Project {
 
     public void setEnd(Date end) {
         this.end = end;
+    }
+
+    public void setWebSite(String webSite) {
+        this.webSite = webSite;
+    }
+
+    public String getWebSite() {
+        return webSite;
     }
 
     public void setWorkStation(String workStation) {

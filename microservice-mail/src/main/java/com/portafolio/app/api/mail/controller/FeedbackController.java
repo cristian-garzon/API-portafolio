@@ -41,7 +41,6 @@ public class FeedbackController {
         message.setSubject("new mail for job from " + feedback.getName());
         message.setText(feedback.getFeedback());
 
-
         // send mail
         sender.send(message);
         return ResponseEntity.noContent().build();
