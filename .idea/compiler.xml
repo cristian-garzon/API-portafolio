@@ -8,8 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="microservice-gateway" />
         <module name="microservice-project" />
-        <module name="microservice-skill" />
+        <module name="microservicio-mail" />
         <module name="microservice-mail" />
+        <module name="microservice-skill" />
         <module name="microservice-eureka" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
       <module name="microservice-mail" target="11" />
       <module name="microservice-project" target="11" />
       <module name="microservice-skill" target="11" />
+      <module name="microservicio-mail" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="microservice-mail" options="-parameters" />
       <module name="microservice-project" options="-parameters" />
       <module name="microservice-skill" options="-parameters" />
+      <module name="microservicio-mail" options="-parameters" />
     </option>
   </component>
 </project>
