@@ -9,7 +9,6 @@
       <module fileurl="file://$PROJECT_DIR$/microservice-mail/microservice-mail.iml" filepath="$PROJECT_DIR$/microservice-mail/microservice-mail.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-project/microservice-project.iml" filepath="$PROJECT_DIR$/microservice-project/microservice-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice-skill/microservice-skill.iml" filepath="$PROJECT_DIR$/microservice-skill/microservice-skill.iml" />
-      <module fileurl="file://$PROJECT_DIR$/microservice-mail/microservicio-mail.iml" filepath="$PROJECT_DIR$/microservice-mail/microservicio-mail.iml" />
     </modules>
   </component>
 </project>
