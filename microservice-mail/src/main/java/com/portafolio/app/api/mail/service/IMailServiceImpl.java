@@ -31,7 +31,7 @@ public class IMailServiceImpl implements IMailService{
         helper.setText("hey " + feedback.getName() + " thanks for visit my website :D, my name is cristian" +
                 ", nice to meet you, so tell me, what do you need? i would like to know :3");
         helper.setSubject("cristian garzón web developer");
-        FileSystemResource file = new FileSystemResource(new File("/home/cristian/Descargas/presentacion.png"));
+        FileSystemResource file = new FileSystemResource(new File("E:/programacion/api-portafolio/microservice-mail/src/main/java/com/portafolio/app/api/mail/service/CRISTIAN-GARZON.pdf"));
         helper.addAttachment(file.getFilename(),file);
         sender.send(message);
 

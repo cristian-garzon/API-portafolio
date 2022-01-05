@@ -1,8 +1,19 @@
 package com.portafolio.app.api.mail.entity;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+
 public class Feedback {
+
+    @NotEmpty
     private String name;
+
+    @Email
+    @NotEmpty
     private String email;
+
+    @NotEmpty
     private String feedback;
 
     public void setName(String name) {
